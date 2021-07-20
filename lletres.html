@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            nom=['M','A','R','I','A','J','O','E','E','E','S','C','U','D','E','R','O','A','L','I','A','U']
+           for (i=0; i<nom.length;i++)
+            {
+                if (nom[i].match(/[aeiou]/gi))  console.log('He trobat la vocal: '+nom[i]);
+                else console.log('He trobat la consonant: '+nom[i]);      
+                
+            }
+
+            nom=['M','A','R','I','A','J','O','4','E','E','S','C','U','D','E','R','O','A','L','I','A','U']
+            for (i=0; i<nom.length;i++)
+            {
+                if (nom[i].match(/[aeiou]/gi))  console.log('He trobat la vocal: '+nom[i]);
+                else if (Number(nom[i])) console.log('El noms de persones no tenen números: '+nom[i]);
+                    else console.log('He trobat la consonant: '+nom[i]);     
+                
+               
+                
+            }
+            
+            var lletres = new Array(24);
+            nom.map(function(x){
+                        
+                if (lletres[x]>0) lletres[x]=lletres[x]+1;
+                else lletres[x]=1
+                
+            })
+            console.log(lletres);
+
+            nom=['M','A','R','I','A','J','O','E'];
+            cognom=['E','E','S','C','U','D','E','R','O'];
+            fullName = nom.concat("",cognom);
+            console.log(fullName);
+            
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+</html>
